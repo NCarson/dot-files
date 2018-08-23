@@ -50,7 +50,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -104,10 +104,9 @@ alias ls='ls --color'
 alias python=python3
 
 export TERM=xterm-256color
-export PGDATABASE=chess-dev
-export PGPORT=5433
 export PATH="$PATH:~/bin"
 
+export EDITOR=vim
 export PAGER=less
 export LESS="-iMSx4 -FX"
 export LESS="-r"

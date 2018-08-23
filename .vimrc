@@ -10,7 +10,6 @@ endif
 
 " ================ General Config ====================
 
-set shell=bash\ --login
 
 "set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
@@ -169,6 +168,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'vf42/AutoSQLUpperCase.vim'
 Plug 'derekwyatt/vim-scala'
 Plug 'lifepillar/pgsql.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 let g:sql_type_default = 'pgsql'
@@ -176,4 +180,7 @@ let g:sql_type_default = 'pgsql'
 
 set pastetoggle=<F12>
 set textwidth=80
+set statusline=[%n]\ %<%f%h%m
+set laststatus=2
+set shell=bash\ --login
 
