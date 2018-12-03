@@ -172,6 +172,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-airline/vim-airline'
+Plug 'mustache/vim-mustache-handlebars'
 
 call plug#end()
 
@@ -183,4 +184,5 @@ set textwidth=80
 set statusline=[%n]\ %<%f%h%m
 set laststatus=2
 set shell=bash\ --login
+set shellcmdflag=-ic
 
