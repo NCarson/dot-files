@@ -1,0 +1,6 @@
+[user]
+	name = ncarson
+	email = wile.e.coyote@gmail.com
+
+[push]
+    default = simple
