@@ -184,5 +184,5 @@ set textwidth=80
 set statusline=[%n]\ %<%f%h%m
 set laststatus=2
 set shell=bash\ --login
-set shellcmdflag=-ic
+set shellcmdflag=-c
 

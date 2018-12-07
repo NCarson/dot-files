@@ -100,6 +100,10 @@ fi
 #    . /etc/bash_completion
 #fi
 
+#command completion for sudo and man
+complete -cf sudo
+complete -cf man
+
 alias ls='ls --color'
 alias python=python3
 
@@ -107,6 +111,8 @@ export TERM=xterm-256color
 export PGDATABASE=chess-dev
 export PGPORT=5433
 export PATH="$PATH:~/bin"
+
+
 
 export PAGER=less
 export LESS="-iMSx4 -FX"
